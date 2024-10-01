@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Deftones Rajongói Oldal</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Deftones</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Kezdőlap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#albums">Albumok</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tours">Turnék</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kapcsolat</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero-section d-flex align-items-center justify-content-center">
+        <div class="text-center">
+            <h1 class="display-4 text-white">Deftones</h1>
+            <p class="lead text-white">Egyedülálló, műfajokon átívelő hangzás</p>
+            <a href="#albums" class="btn btn-secondary btn-lg">Albumok megtekintése</a>
+        </div>
+    </header>
+    <section id="albums" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Albumok</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="kepek/whitepony.jpg" class="card-img-top" alt="White Pony lemezborító">
+                        <div class="card-body">
+                            <h5 class="card-title">White Pony</h5>
+                            <p class="card-text">Kiadva: 2000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="kepek/diamondeyes.jpg" class="card-img-top" alt="Diamond Eyes lemezborító">
+                        <div class="card-body">
+                            <h5 class="card-title">Diamond Eyes</h5>
+                            <p class="card-text">Kiadva: 2010</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="kepek/ohms.jpg" class="card-img-top" alt="Ohms lemezborító">
+                        <div class="card-body">
+                            <h5 class="card-title">Ohms</h5>
+                            <p class="card-text">Kiadva: 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="checkbox" id="toggleInfo">
+            <label for="toggleInfo" class="btn btn-primary">További albumok</label>
+            <div id="moreInfo">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="kepek/adrenaline.jpg" class="card-img-top" alt="Adrenaline lemezborító">
+                            <div class="card-body">
+                                <h5 class="card-title">Adrenaline</h5>
+                                <p class="card-text">Kiadva: 1995</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="kepek/aroundthefur.jpg" class="card-img-top" alt="Around the Fur lemezborító">
+                            <div class="card-body">
+                                <h5 class="card-title">Around the Fur</h5>
+                                <p class="card-text">Kiadva: 1997</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="kepek/deftones.jpg" class="card-img-top" alt="Önelnevezett Deftones lemezborító">
+                            <div class="card-body">
+                                <h5 class="card-title">Deftones</h5>
+                                <p class="card-text">Kiadva: 2003</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Deftones Rajongói Oldal. Minden jog fenntartva.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-white">Adatvédelmi szabályzat</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Használati feltételek</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
