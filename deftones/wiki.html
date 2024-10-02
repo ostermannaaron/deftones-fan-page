@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <title>Mi is az a Deftones?</title>
+    <style>
+        .hero-about {
+            height: 60vh;
+            background: url('kepek/deftones_wiki.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        .about-text {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about-text p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+
+        .band-members {
+            padding: 40px 0;
+            background-color: #343a40;
+            color: white;
+        }
+
+        .band-member-card {
+            border: none;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .band-member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .band-member-card img {
+            transition: transform 0.4s ease;
+        }
+
+        .band-member-card:hover img {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #212529;
+            color: #bbb;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="hero-about">
+        <div class="container">
+            <h1 class="display-4">Deftones</h1>
+            <p class="lead">Egy befolyásos amerikai alternatív metál banda története.</p>
+        </div>
+    </section>
+
+    <section class="about-text">
+        <div class="container">
+            <h2>Történetük</h2>
+            <p>
+                A Deftones egy 1988-ban alakult amerikai alternatív metal zenekar a kaliforniai Sacramentóból. A metált, alternatív rockot, shoegaze-t és post-metalt ötvöző egyedi stílusukról ismert Deftones meghatározó hatással volt a modern rockzenére. Az olyan úttörő albumokkal, mint a „White Pony” és a „Diamond Eyes”, a zenekar következetesen fejlődött, miközben világszerte erős érzelmi kapcsolatot tart fenn a rajongókkal. Hangzásuk feszegeti a zenei műfajok határait, összetéveszthetetlen módon vegyítve az agresszív, dallamos és atmoszférikus elemeket.
+            </p>
+        </div>
+    </section>
+
+    <section class="band-members">
+        <div class="container">
+            <h2 class="text-center mb-5">A banda tagjai</h2>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card bg-secondary band-member-card text-center">
+                        <img src="kepek/chino_moreno.jpg" class="card-img-top" alt="Chino Moreno">
+                        <div class="card-body">
+                            <h5 class="card-title">Chino Moreno</h5>
+                            <p class="card-text">Lead vocals, rhythm guitar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-secondary band-member-card text-center">
+                        <img src="kepek/stephen_carpenter.jpg" class="card-img-top" alt="Stephen Carpenter">
+                        <div class="card-body">
+                            <h5 class="card-title">Stephen Carpenter</h5>
+                            <p class="card-text">Lead guitar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-secondary band-member-card text-center">
+                        <img src="kepek/abe_cunningham.jpg" class="card-img-top" alt="Abe Cunningham">
+                        <div class="card-body">
+                            <h5 class="card-title">Abe Cunningham</h5>
+                            <p class="card-text">Drummer</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+        
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Deftones Rajongói Oldal. Minden jog fenntartva.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-white">Adatvédelmi szabályzat</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Használati feltételek</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

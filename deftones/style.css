@@ -47,29 +47,40 @@ footer {
     margin-top: 4rem;
 }
 
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 10px
+}
 
+nav .nav-link {
+    transition: color 0.3s ease;
+}
 
-/* Hide the actual checkbox */
+nav .nav-link:hover {
+    color: #ffffff;
+}
+
+/* Checkbox elrejtése */
 input[type="checkbox"] {
     display: none;
 }
 
-/* Initially hide the content */
+/* Több információ (albumok) kezdetleges elrejtése */
 #moreInfo {
     display: none;
 }
 
-/* When the checkbox is checked, show the content */
+/* Ha a checkbox be lett pipálva a "gomb" által, mutassa a többi albumot */
 input[type="checkbox"]:checked + label + #moreInfo {
     display: block;
 }
 
-/* When the checkbox is checked, hide the button (label) */
+/* Elrejti a gombot ha be van pipálva a checkbox */
 input[type="checkbox"]:checked + label {
     display: none;
 }
 
-/* Optionally, add hover effect like Bootstrap button */
+/* Hover effektus */
 label:hover {
     background-color: #0056b3;
 }
