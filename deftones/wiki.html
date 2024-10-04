@@ -4,86 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="wiki.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
     <title>Mi is az a Deftones?</title>
-    <style>
-        .hero-about {
-            height: 60vh;
-            background: url('kepek/deftones_wiki.jpg') no-repeat center center;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-about::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.6);
-            z-index: -1;
-        }
-
-        .about-text {
-            padding: 60px 0;
-            background-color: #f8f9fa;
-        }
-
-        .about-text h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .about-text p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            margin-bottom: 40px;
-            text-align: justify;
-        }
-
-        .band-members {
-            padding: 40px 0;
-            background-color: #343a40;
-            color: white;
-        }
-
-        .band-member-card {
-            border: none;
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-        }
-
-        .band-member-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .band-member-card img {
-            transition: transform 0.4s ease;
-        }
-
-        .band-member-card:hover img {
-            transform: scale(1.1);
-        }
-
-        footer {
-            background-color: #212529;
-            color: #bbb;
-            text-align: center;
-            padding: 30px 0;
-        }
-
-    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="wiki.html" target="_self">Mi is az a Deftones?</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -107,7 +35,7 @@
     </nav>
     <section class="hero-about">
         <div class="container">
-            <h1 class="display-4">Deftones</h1>
+            <h1 class="display-4 yesteryear-regular" style="font-size: 120px;">Deftones</h1>
             <p class="lead">Egy befolyásos amerikai alternatív metál banda története.</p>
         </div>
     </section>
@@ -125,7 +53,6 @@
         <div class="container">
             <h2 class="text-center mb-5">A banda tagjai</h2>
             <div class="row">
-
                 <div class="col-md-4">
                     <div class="card bg-secondary band-member-card text-center">
                         <img src="kepek/chino_moreno.jpg" class="card-img-top" alt="Chino Moreno">
@@ -135,7 +62,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card bg-secondary band-member-card text-center">
                         <img src="kepek/stephen_carpenter.jpg" class="card-img-top" alt="Stephen Carpenter">
@@ -145,7 +71,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card bg-secondary band-member-card text-center">
                         <img src="kepek/abe_cunningham.jpg" class="card-img-top" alt="Abe Cunningham">
@@ -155,18 +80,16 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
             <div class="row">
-        
-            </div>
-        </div>
-         <div class="col-md-4">
-            <div class="card bg-secondary band-member-card text-center">
-               <img src="kepek/chicheng.jpg" class="card-img-top" alt="Chi Cheng">
-                <div class="card-body">
-                    <h5 class="card-title">Chi Cheng</h5>
-                    <p class="card-text">Bass, background vocals (former)</p>
+                <div class="col-md-4">
+                    <div class="card bg-secondary band-member-card text-center">
+                       <img src="kepek/chicheng.jpg" class="card-img-top" alt="Chi Cheng">
+                        <div class="card-body">
+                            <h5 class="card-title">Chi Cheng</h5>
+                            <p class="card-text">Bass, background vocals (former)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
