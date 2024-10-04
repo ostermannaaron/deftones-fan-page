@@ -76,6 +76,10 @@ nav {
     padding-left: 10px
 }
 
+#wikicim {
+    font-size: 120px;
+}
+
 footer {
     background-color: #212529;
     color: #bbb;

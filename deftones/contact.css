@@ -1,8 +1,9 @@
 body{
-    background: url("kepek/Deftones.png");
+    background-image: url("kepek/deftoneswallpaper.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
 * {
 	box-sizing: border-box;
