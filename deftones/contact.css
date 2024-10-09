@@ -105,7 +105,12 @@ span a {
 
 nav {
     background-color: rgba(0, 0, 0, 0.8);
-    padding-left: 10px
+    padding: 0px 10px 0 10px;
+}
+
+.navbar li {
+    padding: 0 10px;
+    font-size: 18px;
 }
 
 nav .nav-link {
@@ -114,4 +119,8 @@ nav .nav-link {
 
 nav .nav-link:hover {
     color: #ffffff;
+}
+
+#wikiTitle {
+	text-decoration: underline;
 }
