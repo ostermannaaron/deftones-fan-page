@@ -2,21 +2,41 @@
 <html lang="hu">
 <head>
 	<meta charset="UTF-8">
-	<title>Contact</title>
+	<title>Kapcsolat</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
 	<link href="contact.css" rel="stylesheet">
 </head>
 <body>
-	<div class="form-box">
-		<div class="header-text">
-			Adatok 
+	<nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="wiki.html" target="_self">Mi is az a Deftones?</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Kezdőlap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#albums">Albumok</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Kapcsolat</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<form action="">
+		<div class="form-box">
+			<div class="header-text">Hírlap</div>
+			<input placeholder="E-mail" type="email">
+			<input placeholder="Jelszó " type="password" min="4"> 
+			<input id="terms" type="checkbox" required> 
+			<label for="terms"></label>
+			<span>Elfogadom: <a href="#">Feltételek</a></span> 
+			<button type="submit">Regisztráció</button>
 		</div>
-		<input placeholder="E-mail" type="text">
-		<input placeholder="Jelszó " type="password" min="4"> 
-		<input id="terms" type="checkbox" required> 
-		<label for="terms"></label>
-		<span>Elfogadom: <a href="#">Feltételek</a></span> 
-		<button>Bejelentkezés</button>
-	</div>
+	</form>
 </body>
 </html>
 

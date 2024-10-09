@@ -89,7 +89,7 @@ body {
 	font-size: 14px;
 }
 .form-box button {
-	background-color: blueviolet;
+	background-color: grey;
 	color: whitesmoke;
 	border: none;
 	border-radius: 5px;
@@ -101,4 +101,17 @@ body {
 }
 span a {
 	color: #BBB;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left: 10px
+}
+
+nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+nav .nav-link:hover {
+    color: #ffffff;
 }
